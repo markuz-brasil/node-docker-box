@@ -10,8 +10,8 @@ You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs
 
 - Download the box.
   ```bash
-  [local]$ git clone --depth=1 https://github.com/markuz-brasil/mean-docker-box
-  [local]$ cd mean-docker-box
+  [local]$ git clone --depth=1 https://github.com/markuz-brasil/node-docker-box
+  [local]$ cd node-docker-box
   ```
 
 - Install the box and ssh into the it.
@@ -27,7 +27,7 @@ You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs
   Bringing machine 'default' up with 'virtualbox' provider...
   ==> default: Importing base box 'ubuntu-official'...
   ==> default: Matching MAC address for NAT networking...
-  ==> default: Setting the name of the VM: mean-docker-box_default_1419220263228_74237
+  ==> default: Setting the name of the VM: node-docker-box_default_1419220263228_74237
   ==> default: Clearing any previously set forwarded ports...
   ==> default: Clearing any previously set network interfaces...
   ==> default: Preparing network interfaces based on configuration...
@@ -54,8 +54,8 @@ You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs
   ==> default: Checking for guest additions in VM...
   ==> default: Configuring and enabling network interfaces...
   ==> default: Mounting shared folders...
-      default: /vagrant => /Volumes/markuz-brasil/boxes/mean-docker-box
-      default: /tmp/vagrant-puppet-4/manifests => /Volumes/markuz-brasil/boxes/mean-docker-box
+      default: /vagrant => /Volumes/markuz-brasil/boxes/node-docker-box
+      default: /tmp/vagrant-puppet-4/manifests => /Volumes/markuz-brasil/boxes/node-docker-box
   ==> default: Machine not provisioning because `--no-provision` is specified.
   Welcome to Ubuntu 14.04.1 LTS (GNU/Linux 3.13.0-43-generic x86_64)
 
