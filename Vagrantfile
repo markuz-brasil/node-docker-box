@@ -15,7 +15,7 @@ Vagrant.configure(2) do |config|
     puppet.manifest_file  = "bootstrap.pp"
   end
 
-  config.vm.provision "shell", id: "update", inline: "apt-get update && apt-get -y upgrade"
-  config.vm.provision "shell", id: "provision", path: "#{File.expand_path("..", __FILE__)}/provisions.sh"
+  config.vm.provision "update", type: "shell" , inline: "apt-get update && apt-get -y upgrade"
+  config.vm.provision "provision", type: "shell", path: "#{File.expand_path("..", __FILE__)}/provisions.sh"
 
 end
