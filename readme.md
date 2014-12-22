@@ -12,7 +12,7 @@ You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs
 - Download the box.
   ```bash
   [local]$ git clone --depth=1 https://github.com/markuz-brasil/docker-box
-  [local]$ cd base-box
+  [local]$ cd docker-box
   ```
 
 - Install the box and ssh into the it.
