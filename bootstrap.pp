@@ -7,11 +7,11 @@ file { '/etc/motd':
 \n"
 }
 
-class loadEnv {
+# class loadEnv {
   # Exec { path => ['/usr/local/bin','/usr/local/sbin','/usr/bin/','/usr/sbin','/bin','/sbin'], }
-}
+# }
 
-class {loadEnv: }
+# class {loadEnv: }
 
 
 
