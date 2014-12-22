@@ -5,9 +5,9 @@ Vagrant.configure(2) do |config|
   config.vm.network "private_network", ip: "192.168.34.10"
 
   config.vm.provider :virtualbox do |vb|
-    vb.customize ["modifyvm", :name, "--memory", "496"]
-    vb.customize ["modifyvm", :name, "--cpus", "1"]
-    vb.customize ["setextradata", :name, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
+    vb.customize ["modifyvm", :id, "--memory", "496"]
+    vb.customize ["modifyvm", :id, "--cpus", "1"]
+    vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
   end
 
   config.vm.provision :puppet do |puppet|
