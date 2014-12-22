@@ -2,8 +2,8 @@
 file { '/etc/motd':
     content => "- OS: Ubuntu 14.04 \"trusty\" server-amd64
 - NodeJS: stable (0.10.x) and latest (0.11.x)
-- Packer: stable (0.6.0)
-- Docker: stable (1.0.0)
+- Packer: stable (0.7.x)
+- Docker: stable (1.4.x)
 \n"
 }
 

@@ -1,8 +1,7 @@
 ## what is this
-This is a basic vagrant box. It installs the official ubuntu box and a MEAN
-environment.  
-It installs mongodb, nodejs and some npm global packages. You can easily disable
-the provisions in the `Vagrantfile`  
+This is a basic vagrant box. It installs the official ubuntu box and a 
+node, docker, packer environment.  
+You can easily disable the provisions in the `Vagrantfile`  
 
 ## Requirements
 You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs.vagrantup.com/v2/virtualbox) for instructions, and [here](http://www.vagrantup.com/downloads) and [here](https://www.virtualbox.org/wiki/Downloads) for download
@@ -131,9 +130,8 @@ You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs
 
     - OS: Ubuntu 14.04 "trusty" server-amd64
     - NodeJS: stable (0.10.x) and latest (0.11.x)
-    - MongoDB: stable (2.6.1)
-    - Packer: stable (0.6.0)
-    - Docker: stable (1.0.0)
+    - Packer: stable (0.7.x)
+    - Docker: stable (1.4.x)
 
     Last login: Thu Jun 12 15:02:22 2014 from 10.0.2.2
     vagrant@vagrant-ubuntu-trusty-64:~$
@@ -146,13 +144,10 @@ You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs
     vagrant@vagrant-ubuntu-trusty-64:~$ ls /vagrant
     bootstrap.pp  provisions.sh  readme.md  Vagrantfile
     vagrant@vagrant-ubuntu-trusty-64:~$  node -v
-    v0.10.29
-    vagrant@vagrant-ubuntu-trusty-64:~$ mongo --version
-    MongoDB shell version: 2.6.1
+    v0.10.34
     ```
 
-    If your `/vagrant` directory is empty, this means you `guest additions` is
-    not working. Take a look [here]() for instructions.
+    If your `/vagrant` directory is empty, this means you `guest additions` is not working.
 
     #### Congrats. Now you are set to go.
 
