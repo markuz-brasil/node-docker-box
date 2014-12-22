@@ -5,14 +5,13 @@ It installs mongodb, nodejs and some npm global packages. You can easily disable
 the provisions in the `Vagrantfile`  
 
 ## Requirements
-You must have a `virtualbox` and `vagrant` installation. Look [here]() for
-instructions
+You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs.vagrantup.com/v2/virtualbox) for instructions, and [here](http://www.vagrantup.com/downloads) and [here](https://www.virtualbox.org/wiki/Downloads) for download
 
 ## Install this vagrant box
 
 - Download the box.
   ```bash
-  [local]$ git clone --depth=1 https://github.com/markuz-gj/base-box
+  [local]$ git clone --depth=1 https://github.com/markuz-brasil/docker-box
   [local]$ cd base-box
   ```
 
@@ -56,7 +55,7 @@ instructions
   ==> default: Configuring and enabling network interfaces...
   ==> default: Mounting shared folders...
       default: /vagrant => /Users/MGJ/test/base-box
-      default: /tmp/vagrant-puppet-3/manifests => /Users/MGJ/test/base-box
+      default: /tmp/vagrant-puppet-3/manifests => /Users/markuz-brasil/test/docker-box
   ==> default: Machine not provisioning because `--no-provision` is specified.
   Welcome to Ubuntu 14.04 LTS (GNU/Linux 3.13.0-29-generic x86_64)
 
@@ -79,7 +78,7 @@ instructions
   ```bash
   # But just to be sure, run `uname -v` on the guest
   vagrant@vagrant-ubuntu-trusty-64:~$ uname -v
-  #53-Ubuntu SMP Wed Jun 4 21:00:20 UTC 2014
+  # 53-Ubuntu SMP Wed Jun 4 21:00:20 UTC 2014
   ```
 
 - exit box, reload it, and run provisions:

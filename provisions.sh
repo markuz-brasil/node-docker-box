@@ -1,4 +1,4 @@
-BASE_PATH=$PWD
+adBASE_PATH=$PWD
 
 # apt-get update &&
 apt-get install -y curl wget libssl-dev git-core  build-essential || exit 10
@@ -28,8 +28,8 @@ apt-get install -y curl wget libssl-dev git-core  build-essential || exit 10
 
 # installing packer
 # if ! which packer >/dev/null; then
-  PACKER_VERSION=0.6.0
-  PACKER_URL="https://dl.bintray.com/mitchellh/packer/${PACKER_VERSION}_linux_amd64.zip"
+  PACKER_VERSION=0.7.5
+  PACKER_URL="https://dl.bintray.com/mitchellh/packer/packer_${PACKER_VERSION}_linux_amd64.zip"
 
   apt-get -y install unzip &&
   wget "$PACKER_URL" -O /tmp/packer-${PACKER_VERSION}.zip &&
