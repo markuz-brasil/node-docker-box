@@ -1,4 +1,4 @@
-adBASE_PATH=$PWD
+BASE_PATH=$PWD
 
 # apt-get update &&
 apt-get install -y curl wget libssl-dev git-core  build-essential || exit 10
