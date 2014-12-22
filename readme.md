@@ -70,18 +70,17 @@ You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs
   0 updates are security updates.
 
 
-  vagrant@vagrant-ubuntu-trusty-64:~$ uname -v
-  #72-Ubuntu SMP Mon Dec 8 19:35:06 UTC 2014
   vagrant@vagrant-ubuntu-trusty-64:~$
   ```
 
   If you got this far, this means that `Ubuntu`, `VirtualBox` and `Vagrant` are working
-  well together and our `base box` is ready to be provisioned.
+  well together and our `node-docker-box` is ready to be provisioned.
+
+- But just to be sure, run `uname -v` on the guest
 
   ```bash
-  # But just to be sure, run `uname -v` on the guest
   vagrant@vagrant-ubuntu-trusty-64:~$ uname -v
-  # 53-Ubuntu SMP Wed Jun 4 21:00:20 UTC 2014
+  #72-Ubuntu SMP Mon Dec 8 19:35:06 UTC 2014
   ```
 
 - exit box, reload it, and run provisions:
@@ -140,7 +139,7 @@ You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs
   - Simple testing.
 
     ```bash
-    # Check if the shared directory is working and test mongo and nodejs version.
+    # Check if the shared directory is working and nodejs version.
     vagrant@vagrant-ubuntu-trusty-64:~$ ls /vagrant
     bootstrap.pp  provisions.sh  readme.md  Vagrantfile
     vagrant@vagrant-ubuntu-trusty-64:~$  node -v
@@ -153,7 +152,7 @@ You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs
 
 ## vagrant cheatsheet:  
 
-#### All vagrant commands need to be run in the box's shared folder.
+#### All vagrant commands need to be run within the box's shared folder.
 
 ```bash
 # Turn the box on
