@@ -55,8 +55,8 @@ You must have a `virtualbox` and `vagrant` installation. Look [here](http://docs
   ==> default: Checking for guest additions in VM...
   ==> default: Configuring and enabling network interfaces...
   ==> default: Mounting shared folders...
-      default: /vagrant => /Volumes/proton/boxes/docker-box
-      default: /tmp/vagrant-puppet-4/manifests => /Volumes/proton/boxes/docker-box
+      default: /vagrant => /Volumes/markuz-brasil/boxes/docker-box
+      default: /tmp/vagrant-puppet-4/manifests => /Volumes/markuz-brasil/boxes/docker-box
   ==> default: Machine not provisioning because `--no-provision` is specified.
   Welcome to Ubuntu 14.04.1 LTS (GNU/Linux 3.13.0-43-generic x86_64)
 
