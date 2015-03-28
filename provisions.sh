@@ -1,13 +1,13 @@
 BASE_PATH=$PWD
 
 # apt-get update &&
-apt-get install -y curl wget libssl-dev git-core  build-essential || exit 10
+apt-get install -y curl wget libssl-dev git-core build-essential vim-nox zsh || exit 10
 
 # installing n, nodejs stable and latest
 # [ -d "/usr/local/lib/node_modules" ] || {
   cd /root
-  git clone --depth=1 "https://github.com/visionmedia/n.git" /root/n &&
-  cd n && make install && n stable && n latest && cd /root &&
+  git clone --depth=1 "https://github.com/tj/n.git" /root/n &&
+  cd n && make install && n io use 1.6.2 && cd /root &&
   rm -rf /root/n || echo 'nodejs install failed'
   # using stable nodejs, and installing basic global pkgs.
   n stable &&
